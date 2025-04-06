@@ -1,0 +1,31 @@
+public class App{
+    public static void main(String[] args) {
+        int numero1, numero2, numero3, media;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe o primeiro número ");
+        numero1 = scanner.nextInt();
+
+        System.out.println("Informe o segundo número ");
+        numero2 = scanner.nextInt();
+
+        System.out.println("Informe o terceiro número ");
+        numero3 = scanner.nextInt();
+
+        if(numero1 > numero2 && numero1 > numero3 ){
+            System.out.println("O primeiro número é o maior ");
+        }
+
+        if(numero2 > numero1 && numero2 > numero3 ){
+            System.out.println("O segundo número é o maior ");
+        }
+
+        if(numero3 > numero1 && numero3 > numero2 ){
+            System.out.println("O terceiro número é o maior ");
+        }
+
+        media = (numero1+numero2+numero3)/3;
+
+        System.out.println("A média dos três número é "+ media);
+    }
+}
